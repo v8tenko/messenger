@@ -1,0 +1,4 @@
+.container {
+    background-color: var(--backgroun-primary-color);
+    height: var(--fill-height);
+}

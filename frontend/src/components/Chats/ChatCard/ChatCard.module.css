@@ -1,0 +1,29 @@
+.chatCard {
+    width: 100%;
+    background-color: var(--backgroun-primary-color);
+    overflow: hidden;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 9px;
+}
+
+.text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 13px;
+    color: var(--text-secondary-color)
+}
+
+.label {
+    font-size: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100vw - 54px - 35px);
+    padding: 9px 0px 9px 7px;
+}

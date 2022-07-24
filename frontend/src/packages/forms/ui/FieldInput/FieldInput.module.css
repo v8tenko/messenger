@@ -1,0 +1,28 @@
+.error {
+    color: red;
+    font-size: 10px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    padding: 0 20px;
+    margin: 2px 0 4px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.input {
+    margin-bottom: 16px;
+}
+
+.container {
+    position: relative;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}

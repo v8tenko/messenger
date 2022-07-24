@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+}
+
+.input {
+    width: 100%;
+    background-color: var(--backgroun-primary-color);
+    padding: 11px 13px;
+    border: 1px var(--secondary-color) solid;
+    border-radius: 7px;
+    margin: 3px 15px;
+    transition: border-color 200ms ease-in-out;
+}
+
+.input:focus {
+    border: 1px var(--primary-color) solid;
+    outline: none;
+}
+
+.input:focus ~ .label {
+    color: var(--primary-color)
+}
+
+.label {
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--text-secondary-color);
+    transition: color 200ms ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: translateY(-35%);
+    padding: 0 3px;
+    background-color: var(--backgroun-primary-color);
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-200%)
+}

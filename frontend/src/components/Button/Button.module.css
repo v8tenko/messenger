@@ -1,0 +1,27 @@
+.primary {
+    background-color: var(--primary-color)
+}
+
+.secondary {
+    background-color: var(--secondary-color)
+}
+
+.button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 13px;
+    border: none;
+    background-color: var(--backgroun-primary-color);
+}
+
+.container {
+    padding: 13px 15px;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: opacity 100ms ease-in-out;
+}
+
+.container:active {
+    background-color: var(--primary-color);
+    opacity: 0.6;
+}
