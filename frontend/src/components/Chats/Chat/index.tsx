@@ -6,8 +6,17 @@ import { ChatCard } from '../ChatCard';
 
 import styles from './Chat.module.css';
 
-export const Chat: React.FC<ChatList> = ({ chats }) => {
-	const chatsNodes = useMemo(() => chats.map((chat) => <ChatCard {...chat} key={chat.id} />), [chats]);
+type ChatsUIProps = {
+	editMode?: boolean;
+};
+
+type Props = ChatsUIProps & ChatList;
+
+export const Chat: React.FC<Props> = ({ chats, editMode }) => {
+	const chatsNodes = useMemo(() => chats.map((chat) => <ChatCard {...chat} key={chat.id} editMode={editMode} />), [
+		chats,
+		editMode
+	]);
 
 	if (chatsNodes.length == 0) {
 		return (

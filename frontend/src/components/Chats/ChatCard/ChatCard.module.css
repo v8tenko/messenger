@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 9px;
+    position: relative;
+    --chat-content-width: calc(100vw - 54px - 35px)
 }
 
 .text {
@@ -24,6 +26,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(100vw - 54px - 35px);
+    width: var(--chat-content-width);
     padding: 9px 0px 9px 7px;
+}
+
+.content.move {
+    width: calc(var(--chat-content-width) - 16px);
+}
+
+.shuffle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%)
 }
